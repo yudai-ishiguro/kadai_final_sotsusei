@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>あすもぐ</title>
+  <link rel="icon" href="./img/favicon.ico">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+  <button class="hamburger-menu" id="js-hamburger-menu">
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+    <span class="hamburger-menu__bar"></span>
+  </button>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__list-item"><a href="#" id="open1" class="navigation__link">DISCOVER</a></li>
+      <li class="navigation__list-item"><a href="#" id="open2" class="navigation__link">DREAM</a></li>
+      <li class="navigation__list-item"><a href="#" id="open3" class="navigation__link">DESIGN</a></li>
+      <li class="navigation__list-item"><a href="#" id="open4" class="navigation__link">DESTINY</a></li>
+      <li class="navigation__list-item"><a href="#" id="open5" class="navigation__link">DISCLAIMER</a></li>
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <img src="./img/asumogu_logo.png" alt="あすもぐロゴ" class="logo_img">  
+  </div>
+
+  <div class="lang_select">
+    <div class="lang">
+    <a href=#>JP</a>
+    </div>
+    <div class="lang">
+      <a href=https://divetomorrow.okinawa/kerama/index_en.html>EN</a>
+    </div>
+  </div>
+</header>
+
+<!-- カルーセルその２ -->
+<section class="carousel2">
+  <div class="contains">
+    <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+    <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+    <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+    <!-- スライド1番目 -->
+    <div class="slide">
+      <div class="scroll_controler">
+        <label class="scroll_button scroll_prev" for="SlideC"></label>
+        <label class="scroll_button scroll_next" for="SlideB"></label>
+      </div>
+      <div class="tbd">
+          <img src="./img/mv1s.png" alt="メインビジュアル１" class="tbd_img">
+      </div>
+      <div class="tbd2">
+          <h1>世界が恋する海 慶良間</h1>
+      </div>
+    </div>
+    <!-- スライド2番目 -->
+    <div class="slide">
+      <div class="scroll_controler">
+        <label class="scroll_button scroll_prev" for="SlideA"></label>
+        <label class="scroll_button scroll_next" for="SlideC"></label>
+      </div>
+      <div class="tbd">
+          <img src="./img/mv2s.jpg" alt="メインビジュアル２" class="tbd_img">
+      </div>
+      <div class="tbd2">
+          <h1>ダイビングポイント予報</h1>
+      </div>
+    </div>
+    <!-- スライド3番目 -->
+    <div class="slide">
+      <div class="scroll_controler">
+        <label class="scroll_button scroll_prev" for="SlideB"></label>
+        <label class="scroll_button scroll_next" for="SlideA"></label>
+      </div>
+      <div class="tbd">
+          <img src="./img/mv3s.png" alt="メインビジュアル３" class="tbd_img">
+      </div>
+      <div class="tbd2">
+          <h1>明日どこで潜る？</h1>
+      </div>
+  </div> 
+    <!-- スライド移動用ボタン -->
+  <div class="move_controler">
+    <label class="button_move" for="SlideA"></label>
+    <label class="button_move" for="SlideB"></label>
+    <label class="button_move" for="SlideC"></label>
+  </div>
+ </div> 
+</section>
+
+
+<div id="mask" class="hidden"></div>
+
+<section id="discover" class="modal hidden">
+<div class="modal-content">
+  <h3><span class="marker">DISCOVER</span></h3>
+  <p>日本の沖縄には世界に誇る観光資源として美しい海があります。多くの人に愛される海となることで、この海と、海と共に暮らす海人達の暮らしが将来に渡って持続可能となると信じ、沖縄の海の魅力を世界に向けて発信して行きます。</p>
+  <p>Okinawa in Japan has a beautiful sea as a world-class tourist resource. We believe that by making the sea loved by many people, the sea and the lives of the people who live with the sea will be sustainable for the future, and we will communicate the charm of Okinawa's sea to the world.</p>
+  <div class="close" data-modal="discover">CLOSE</div>
+</div>
+</section>
+
+<section id="dream" class="modal hidden">
+<div class="modal-content">
+  <h3><span class="marker">DREAM</span></h3>
+  <p>忙しい毎日の中でも沖縄の海をいつも身近に感じていられる、そして、思い立ったその時にダイビングに行ける。「あすもぐ」のある日常をイメージしてみてください。</p>
+  <p>Even in your busy daily life, you can always feel close to the Okinawan sea and go diving whenever you feel like it. Imagine your everyday life with Asumogu.</p>
+  <div class="video-container">
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/mK1aUzRYVSQ?si=JP3agGLvV20yrq88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="close" data-modal="dream">CLOSE</div>
+</div>
+</section>
+
+<section id="design" class="modal hidden">
+<div class="modal-content">
+  <h3><span class="marker">DESIGN</span></h3>
+  <p>「あすもぐ」は慶良間諸島の天気とダイビングスポットの予報、ダイブショップへの問い合わせをワンストップで提供しています。</p>
+  <p>Asumogu is a one-stop web app providing weather and dive spot forecasts for the Kerama Islands, as well as enquiries to dive shops.</p>
+  <p>阿嘉島、座間味島、渡嘉敷島のいずれかを選択し、明日から５日先までの日付を選んで［照会］ボタンを押下してください。選択した日に潜れそうなダイビングポイントが表示されます。</p>
+  <p>Select Aka Island, Zamami Island or Tokashiki Island, select a date from tomorrow to five days ahead and press the [Inquire] button. The dive sites that can be dived on the selected date will be displayed.</p>
+  <p>ダイビングがしたくなったら、あなたの希望をLINEで送ってください。直前の予約でも、対応可能なダイブショップからの返信を待つだけでOK。</p>
+  <p>If you feel like diving, drop us a line with your wishes. Even for last-minute bookings, just wait for a reply from a dive shop that can accommodate you.</p>
+  <div class="close" data-modal="design">CLOSE</div>
+</div>
+</section>
+
+<section id="destiny" class="modal hidden">
+<div class="modal-content">
+  <h3><span class="marker">DESTINY</span></h3>
+  <p>「あすもぐ」はG'sAcademyの卒業制作として作成しました。ダイビングのポイント予報とダイビングショップへの問い合わせ機能を備えたウェブアプリ、なぜ私なのか。沖縄が好きで、沖縄の海に魅せられた者の一人として、この美しい海の魅力を伝えることで、沖縄に仕えて行きたい。そうした想いをカタチにしたものが「あすもぐ」です。最小限の機能のみを実装してのデプロイですが、沖縄でのダイビングが最高の体験となるよう、これから進化を続けていきます。</p>
+  <p>Asumogu was created as a graduation project for G'sAcademy. A web application with diving point forecasts and a function to contact dive shops, why me? As someone who loves Okinawa and is fascinated by its sea, I want to serve Okinawa by conveying the charm of this beautiful sea. Asumogu is the embodiment of these thoughts. We have deployed it with only the minimum number of functions, but we will continue to evolve it so that diving in Okinawa can be the best experience possible. </p>
+  <div class="close" data-modal="destiny">CLOSE</div>
+</div>
+</section>
+
+<section id="disclaimer" class="modal hidden">
+<div class="modal-content">
+  <h3><span class="marker">DISCLAIMER</span></h3>
+  <h4>免責事項</h4>
+  <ul lang="ja">
+    <li>各日朝９時の天気を表示しています</li>
+    <li>風向予報により潜れそうなダイビングポイントを表示しています</li>
+    <li>海況予報は風速に基づいて表示しています</li>
+    <li>波の向き、波の強さはWindy等で確認して下さい</li>
+    <li>「LINEで問い合わせ」は、あすもぐ管理人の他、複数のダイビングショップのスタッフが受信しています</li>
+    <li>ダイビングの判断はガイドの指示に従ってください</li>
+    <li>このサイトが提供する情報の判断は自己責任で行ってください。万が一の事故に対して当方は一切の責任を負いません</li>
+  </ul>
+  <ul lang="en">
+    <li>Weather at 9am each day.</li>
+    <li>Dive sites that can be dived according to the wind forecast are shown.</li>
+    <li>Sea conditions forecast is based on wind speed.</li>
+    <li>Check the direction and strength of the waves with Windy or similar.</li>
+    <li>Enquiries on LINE are received by the Asumogu manager and staff from several other dive shops</li>
+    <li>Diving decisions must be made according to the guide's instructions.</li>
+    <li>You make decisions about the information provided by this website at your own risk. We accept no responsibility for any accidents that may occur.</li>
+  </ul>
+    <div class="video-container">
+      <iframe width="320" height="180" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=11&overlay=waves&product=ecmwfWaves&level=surface&lat=26.19&lon=127.325&message=true" frameborder="0"></iframe>
+    </div>
+  <div class="close" data-modal="disclaimer">CLOSE</div>
+</div>
+</section>
+
+<h2><span class="marker">慶良間諸島の天気</span></h2>
+<!-- <div id="city-name"></div> -->
+<div id="weather"></div>
+<div id="error-message"></div>
+<!-- <iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=26.19&lon=127.325" frameborder="0"></iframe> -->
+
+<!-- Searchはここから -->
+<section class="serarch">
+
+  <h2><span class="marker">ダイビング予報</span></h2>
+
+  <form id="forecast-form" action="process.php" method="POST" onsubmit="handleSubmit(event)">
+
+    <div class="point_select">
+      <div class="point">
+        <span class="island-name">阿嘉島</span>
+        <span class="island-suffix"></span>
+        <div class="nakami">
+          <div class="img_container">
+            <label for="aka">
+            <img src="./img/aka_2.PNG" alt="阿嘉島の地図"  class="point_img"> 
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="aka" name="point" value="阿嘉島" style="transform:scale(2.0);"  checked />
+          </div>
+        </div>
+      </div>
+      <div class="point">
+        <span class="island-name">座間味島</span>
+        <span class="island-suffix"></span>
+        <div class="nakami">
+          <div class="img_container">
+            <label for="zamami">
+            <img src="./img/zamami_2.PNG" alt="座間味島の地図"  class="point_img"> 
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="zamami" name="point" value="座間味島" style="transform:scale(2.0);" />
+          </div>
+        </div>
+      </div>
+      <div class="point">
+        <span class="island-name">渡嘉敷島</span>
+        <span class="island-suffix"></span>
+        <div class="nakami">
+          <div class="img_container">
+            <label for="tokashiki">
+            <img src="./img/tokashiki_2.PNG" alt="渡嘉敷島の地図"  class="point_img"> 
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="tokashiki" name="point" value="渡嘉敷島" style="transform:scale(2.0);" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="date_select">
+      <label for="date">日付:</label>
+      <input type="date" id="date" name="date" required>
+      <input type="hidden" id="wind-direction" name="wind-direction" value="">
+      <input type="hidden" id="wind-speed" name="wind-speed" value=""><!-- Claude -->
+      <input type="submit" id="submit" value="照会">
+    </div>
+  </form>
+</section>
+<!-- Searchはここまで -->
+
+<!-- テスト表示 -->
+<!-- <h2><span class='marker'>条件に合うダイビングポイント</span></h2>
+<div class='point_select'>
+  <div class='point_image'>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7158.184558915215!2d127.32938513317238!3d26.226190988548552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDEzJzMzLjMiTiAxMjfCsDE5JzUyLjciRQ!5e0!3m2!1sja!2sjp!4v1725077823255!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class='point_info'>
+    <div class='info_box1'>
+      <h3><span class='marker'>ポイント名: </span></h3>
+      <h4>point_name</h4>
+      <p>下げ潮時は流れが強くなる。上げ潮がBEST。</p>
+    </div>
+    <div class='info_box2'>
+      <div class='info_box3'>
+          <h4>レベル: level</h4>
+          <h4>水深: depth</h4>
+          <h4>海況予報: So-So</h4>
+      </div>
+      <div class='info_box4'>
+        <img src='./img/good.PNG' alt='ピクトグラム' width='160' height='160'>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Resultはここから -->
+<section class="result">
+</section>
+<!-- Resultはここまで -->
+
+<!-- Contactはここから -->
+<section class="contact">
+
+  <h2><span class="marker">ダイビングショップを探す</span></h2>
+
+  <a href="https://lin.ee/2Rz0tEN" target="_blank">
+  <div class="obi">
+    <div class="line">
+      <p>LINEで問い合わせ</p>
+    </div>
+  </div>
+  </a>
+
+  <div class="obi2">
+    <div class="intra">
+      <div class="intra_icon">
+        <img src="./img/ramen.png" alt="ダイブショップ" class="divingShop">
+      </div>
+      <div class="intra_comment">
+        <p>那覇市内のショップです。泊港からダイブボートで慶良間にお連れします。</p>
+      </div>
+    </div>
+    <div class="intra">
+      <div class="intra_icon">
+        <img src="./img/ramen.png" alt="ダイブショップ" class="divingShop">
+      </div>
+      <div class="intra_comment">
+        <p>阿嘉島のショップです。高速船到着後すぐ２ダイブ可能です。</p>
+      </div>
+    </div>
+    <div class="intra">
+      <div class="intra_icon">
+        <img src="./img/ramen.png" alt="ダイブショップ" class="divingShop">
+      </div>
+      <div class="intra_comment">
+        <p>北谷のショップです。北谷出航で慶良間に向かいます</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Footerはここから -->
+<footer>
+  <div class="footer_container">
+  <p class="footer_text">&copy;2024 Dive Tomorrow</p>
+  </div>
+</footer>
+<!-- Footerはここまで -->
+
+</body>
+
+</html>
